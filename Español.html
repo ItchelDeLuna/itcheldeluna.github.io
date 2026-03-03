@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Itchel De Luna | Portafolio personal" />
+    <meta name="keywords"
+        content="blog, business card, creative, creative portfolio, cv theme, online resume, personal, portfolio, professional cv, responsive portfolio, resume, resume theme, vcard" />
+    <meta name="author" content="willy wonka" />
+    <title>Itchel De Luna | Portafolio personal</title>
+
+    <!-- ================= OPEN GRAPH (REDES SOCIALES) ================= -->
+<meta property="og:title" content="Itchel De Luna | Portafolio personal" />
+<meta property="og:description" content="Ingeniera en TICS | Desarrolladora Full-Stack | Portafolio profesional." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://itcheldeluna.github.io/" />
+<meta property="og:image" content="https://itcheldeluna.github.io/images/social-preview.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:type" content="image/png" />
+
+<!-- ================= TWITTER CARD ================= -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Itchel De Luna | Portafolio personal" />
+<meta name="twitter:image" content="https://itcheldeluna.github.io/images/social-preview.png" />
+
+
+    <link rel="icon" type="image/png" href="images/loloicon3.ico">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/burbujawhatsapp.css">
+    <link rel="stylesheet" href="css/scroll.css">
+    <link rel="stylesheet" href="css/vendor/slick.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css"> 
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/vane.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@latest/devicon.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+</head>
+
+<body>
+    <div class="whatsapp-bubble">
+        <a href="https://wa.me/+524491810738" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+    <div class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    <script>
+        // Muestra u oculta la burbuja en función de la posición de desplazamiento
+        window.onscroll = function () {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.querySelector(".scroll-to-top").style.display = "block";
+            } else {
+                document.querySelector(".scroll-to-top").style.display = "none";
+            }
+        };
+
+        // Desplázate al principio de la página al hacer clic en la burbuja
+        document.querySelector(".scroll-to-top").addEventListener("click", function () {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        });
+    </script>
+
+
+
+
+<style>
+    @keyframes zoomIn {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.2);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    #floating-button {
+        position: fixed;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        background-color: #d5c988cc;
+        padding: 15px; /* Ajusta el tamaño del botón para computadoras o laptops */
+        border: none;
+        border-radius: 15px 0 0 15px; /* Redondeo solo en el lado izquierdo */
+        cursor: pointer;
+        z-index: 1000;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Agregar sombra al botón */
+        transition: background 0.3s ease; /* Transición suave para el cambio de color de fondo */
+    }
+
+    #floating-button:hover {
+        background: #b3aa7a; /* Cambio de color de fondo al poner el mouse sobre el botón */
+    }
+
+    #floating-button img {
+        width: 30px; /* Ajusta el tamaño de la imagen */
+        height: 30px;
+        animation: zoomIn 2s infinite; /* Aplicar la animación a la imagen */
+    }
+
+    #language-menu {
+    display: none;
+    position: fixed;
+    top: calc(50% + 15px); /* Ajusta la posición del menú debajo del botón */
+    right: 0;
+    transform: translateY(-50%);
+    background-color: #d5c988cc;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    opacity: 0.9;
+    z-index: 1001; /* Índice z más alto para el menú */
+    text-align: center; /* Centra el texto */
+    border-radius: 15px 0 0 15px;
+    /* pointer-events: none; Elimina esta línea */
+}
+
+    #language-menu img {
+        width: 60px; /* Ajusta el tamaño de las imágenes de idiomas */
+        height: 60px;
+        margin-bottom: 10px; /* Espaciado entre las imágenes y el texto */
+        display: block;
+        margin: 0 auto; /* Centra la imagen */
+    }
+
+    #floating-button.menu-open {
+        right: 8px; /* Ajusta la posición del botón cuando el menú está abierto */
+        z-index: 1002; /* Índice z aún más alto para que el botón esté por encima del menú */
+        border-radius: 15px;
+        margin-top: -135px; /* Ajusta el margen superior para superponer el botón sobre el menú */
+    }
+
+    #language-menu .language-item {
+    position: relative;
+    display: inline-block;
+}
+
+#language-menu .language-label {
+    position: absolute;
+    bottom: 0; /* Cambiado de 'top' a 'bottom' */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(213, 201, 136, 0.6); /* Cambia este valor para ajustar la opacidad */
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+    @media (min-width: 768px) {
+        /* Aplicar estilos adicionales para pantallas más grandes */
+        #floating-button img {
+            width: 40px; /* Ajusta el tamaño de la imagen */
+            height: 40px;
+        }
+
+        #language-menu img {
+            width: 80px; /* Ajusta el tamaño de las imágenes de idiomas */
+            height: 80px;
+        }
+
+        #floating-button.menu-open {
+            right: 12px;
+    margin-top: -170px;
+    border-radius: 15px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<!-- Botón flotante y menú de idiomas -->
+<button id="floating-button" onclick="toggleLanguageMenu()"><img src="images/gear.png" alt="Gear Icon"></button>
+
+<div id="language-menu">
+    <div class="language-item" onclick="changeLanguage('es')">
+        <img src="images/mexico.png" alt="Español">
+        <div class="language-label">Español</div>
+    </div><br> 
+    <div class="language-item" onclick="changeLanguage('en')">
+        <img src="images/estados-unidos.png" alt="Inglés">
+        <div class="language-label">Inglés</div>
+    </div><br> 
+    <div class="language-item" onclick="changeLanguage('fr')">
+        <img src="images/francia.png" alt="Francés">
+        <div class="language-label">Francés</div>
+    </div>
+</div>
+
+<script>
+    function toggleLanguageMenu() {
+        var languageMenu = document.getElementById('language-menu');
+        var floatingButton = document.getElementById('floating-button');
+        if (languageMenu.style.display === 'block') {
+            languageMenu.style.display = 'none';
+            floatingButton.classList.remove('menu-open'); // Quita la clase cuando el menú se cierra
+        } else {
+            languageMenu.style.display = 'block';
+            floatingButton.classList.add('menu-open'); // Agrega la clase cuando el menú se abre
+        }
+    }
+
+    function changeLanguage(language) {
+        // Redirige a la página correspondiente según el idioma seleccionado
+        switch (language) {
+            case 'es':
+                window.location.href = 'Español.html';
+                break;
+            case 'en':
+                window.location.href = 'Ingles.html';
+                break;
+            case 'fr':
+                window.location.href = 'Frances.html';
+                break;
+            // Agrega más casos según los idiomas que necesites
+        }
+    }
+</script>
+
+
+
+
+    <div id="all">
+        <div class="cursor"></div>
+        <!--loader-->
+        <div id="loader">
+            <span class="color">Itchel</span>De Luna
+        </div>
+        <!--loader-end-->
+        <!--link-screen-->
+        <div id="breaker">
+        </div>
+        <div id="breaker-two">
+        </div>
+        <!--link-screen-->
+        <!--Main-Section-->
+        <!--Navigator-fullscreen-->
+        <div id="navigation-content">
+            <div class="logo">
+                <img src="images/Logobueno.png" alt="logo">
+            </div>
+            <div class="navigation-close">
+                <span class="close-first"></span>
+                <span class="close-second"></span>
+            </div>
+            <div class="navigation-links">
+                <a href="#" data-text="INICIO" id="home-link">INICIO</a>
+                <a href="#" data-text="SOBREMI" id="about-link">SOBRE MÍ</a>
+                <a href="#" data-text="SERVICIOS" id="blog-link">MIS SERVICIOS</a>
+                <a href="#" data-text="PROYECTOS" id="portfolio-link"> MI PORTAFOLIO</a>
+                
+            </div>
+        </div>
+        <!--Navigator-Fullscreen END-->
+        <!--Home Page-->
+        <!--Menubar-->
+        <div id="navigation-bar">
+            <img src="images/Logobueno.png" alt="logo">
+            <div class="menubar">
+                <span class="first-span"></span>
+                <span class="second-span"></span>
+                <span class="third-span"></span>
+            </div>
+        </div>
+        <!--Menubar End-->
+        <!--Header-->
+        <div id="header">
+            <div id="particles"></div>
+            
+            <div class="social-media-links">
+                <a href="https://wa.me/+524491810738"class="social-media"><i class="fab fa-whatsapp" style="COLOR:#c5b76b; font-size: 25px;"></i></a>
+                <a href="https://t.me/itcheldeluna" class="social-media"><i class="fab fa-telegram" style="COLOR:BLACK; font-size: 25px;"></i></a>
+                <a href="mailto:itchel@itcheldeluna.space" class="social-media"><i class="far fa-envelope" style="COLOR:#c5b76b; font-size: 25px;"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61587835030699&mibextid=wwXIfr&mibextid=wwXIfr"  class="social-media"><i class="fab fa-facebook" style="COLOR:BLACK; font-size: 20px;"></i></a>                
+            </div>
+            <!--Social Media Links end-->
+            <div class="header-content">
+                <div class="header-content-box">
+                    <div class="firstline"><span class="color">ITCHEL </span><br>DE LUNA</div>
+                    <div class="secondline">
+                        SOY
+                        <span class="txt-rotate color" data-period="1200"
+                            data-rotate='["ING. EN TICS.", "DEV FULL-STACK.", "TÉC. EN SOPORTE Y MANTENIMIENTO.", "FREELANCE." ]'></span>
+                        <span class="slash">|</span>
+                    </div>
+                    <div class="contact">
+                        <a href="tel:+524491810738" class="contact-icon"><i class="fas fa-phone" ></i></a>
+                        <a href="https://github.com/ItchelDeLuna" class="contact-icon"><i class="fab fa-github" style="COLOR:#c5b76b;" ></i></a>                        
+                    </div>
+                </div>
+            </div>
+            <!--header image-->
+            <div class="header-image">
+                <!--<img src="images/Vanecuacua.jpg" alt="logo"> CUANDO TENGA LA FOTO -->
+            </div>
+            <!--header image end-->
+        </div>
+        <!--Header End-->
+        <!--HomePage End-->
+        <!--Main-Section End-->
+        <!--about-->
+        <div id="about">
+            <!--about content-->
+            <div id="about-content" style="margin-top: -30px;">
+                <div class="about-header">
+                    Sobre <span class="color">Mí</span>
+                    <span class="header-caption">Codificando el presente,<span class="color"> diseñando el futuro.</span></span>
+                </div>
+                <div class="about-main">
+                    <div class="about-first-paragraph wow">
+                        <!--about description-->
+                        <span class="about-first-line">
+                            ¡Hola! soy
+                            <span class="color">Itchel De Luna</span>
+                            una apasionada en el desarrollo de software, egresada y disponible para oportunidades laborales.</span>
+                        <br>
+                        <span class="about-second-line">Con una sólida formación en Ingeniería en TICS. Durante mi formación, adquirí un profundo conocimiento en diversos lenguajes de programación y tecnologías de vanguardia. Mi enfoque se centra en desarrollar soluciones tecnológicas innovadoras, eficientes y centradas en el usuario. Me entusiasma la oportunidad de contribuir a proyectos desafiantes y continuar creciendo en el apasionante mundo de la tecnología.</span>
+                        <div class="cv">
+                            <a href="cv/ItchelDeLunaCV.pdf" download><button>Descargar <span class="colors">CV</span></button></a>
+                        </div>
+                    </div>
+                    <!--about picture-->
+                    <div class="about-img">
+                        <img src="images/lolito1.jpg" alt="Your Image">
+                    </div>
+                </div>
+            </div>
+
+            <!--services start-->
+            <div id="services">
+            </div>
+            <!--services header-->
+            <div class="services-heading wow" style="margin-top: -5px;">
+                <span class="color">Mis</span> Habilidades
+            </div>
+            <!--services header end-->
+            <!--services content-->
+
+
+            <div class="txt-rotate-container">
+                <span style="color: #000;" class="txt-rotate color" data-period="1200"
+                    data-rotate='["Programación.|"]'></span>
+            </div>
+
+            <style>
+                .txt-rotate-container {
+                    font-family: 'Poppins', sans-serif;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    height: 17vh;
+                    margin-bottom: -70px;
+                    margin-top: -40px;
+                    margin-left: 8%;
+                    font-size: 28px;
+                
+                }
+
+                @media only screen and (max-width: 550px) {
+                    .txt-rotate-container .txt-rotate {
+                        font-size: 15px;
+                    }
+                }
+            </style>
+
+            <section class="clients p-40" id="clients">
+                <div class="client-slider">
+                    <div class="item">
+                        <i class="devicon-html5-plain-wordmark" style="color: #ffffff; font-size: 80px;"></i>
+                    </div>
+                    <div class="item">
+                        <i class="devicon-php-plain" style="color: #ffffff; font-size: 100px;"></i>
+                    </div>
+                    <div class="item">
+                        <i class="devicon-androidstudio-plain-wordmark" style="color: #ffffff; font-size: 100px;"></i>
+                    </div>
+                    <div class="item">
+                        <i class="fab fa-js fa-3x" style="color: #ffffff;"></i>
+                        <p style="text-align: center; font-family: poppins; color: white; font-size: 13px; margin-top: 20px;">&nbsp;&nbsp;Javascript</p>
+                    </div>
+                    <div class="item">
+                        <i class="devicon-laravel-plain-wordmark" style="color: #ffffff; font-size: 80px;"></i>
+                    </div>
+                    <div class="item">
+                        <i class="devicon-css3-plain-wordmark" style="color: #ffffff; font-size: 80px;"></i>
+                    </div>
+                    <div class="item">
+                        <i class="devicon-dotnetcore-plain" style="color: #ffffff; font-size: 80px;"></i>
+                    </div>
+                    <div class="item">
+                        <i class="devicon-java-plain-wordmark" style="color: #ffffff; font-size: 80px;"></i>
+                    </div>
+                    <div class="item">
+                        <i class="devicon-csharp-plain" style="color: #ffffff; font-size: 50px;"></i>
+                        <p style="text-align: center; font-family: poppins; color: white; font-size: 14px;margin-top: 20px;">&nbsp;&nbsp;Csharp</p>
+                    </div>
+                    <div class="item">
+                        <i class="devicon-react-original-wordmark" style="color: #ffffff; font-size: 80px;"></i>
+                    </div>
+                    <div class="item">
+                        <i class="devicon-bootstrap-plain-wordmark" style="color: #ffffff; font-size: 80px;"></i>
+                    </div>
+                    <div class="item">
+                        <i class="fab fa-node fa-5x" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="item">
+                        <i class="devicon-python-plain-wordmark" style="color: #ffffff; font-size: 80px;"></i>
+                    </div>
+                </div>
+            </section>
+            <div style="background-color: #fffdf6;" class="txt-rotate-container">
+                <span style="color: #c5b76b;" class="txt-rotate color" data-period="1200"
+                    data-rotate='["Base de datos.|"]'></span>
+            </div>
+            <section style="background-color: #fffdf6;" class="clients p-40" id="clients">
+                <div class="client-slider">
+                    <div class="item">
+                        <i class="devicon-mysql-plain-wordmark" style="color: #ffffff; font-size: 100px;"></i>
+                    </div>
+                    <div class="item">
+                        <i class="devicon-microsoftsqlserver-plain-wordmark"
+                            style="color: #ffffff; font-size: 100px;"></i>
+                    </div>
+                    <div class="item">
+                        <i class="devicon-sqlite-plain-wordmark" style="color: #ffffff; font-size: 100px;"></i>
+                    </div>
+                    <div class="item">
+                        <i class="devicon-mysql-plain-wordmark" style="color: #ffffff; font-size: 100px;"></i>
+                    </div>
+                    <div class="item">
+                        <i class="devicon-microsoftsqlserver-plain-wordmark"
+                            style="color: #ffffff; font-size: 100px;"></i>
+                    </div>
+                    <div class="item">
+                        <i class="devicon-sqlite-plain-wordmark" style="color: #ffffff; font-size: 100px;"></i>
+                    </div>
+                    <div class="item">
+                        <i class="devicon-mysql-plain-wordmark" style="color: #ffffff; font-size: 100px;"></i>
+                    </div>
+                    <div class="item">
+                        <i class="devicon-microsoftsqlserver-plain-wordmark"
+                            style="color: #ffffff; font-size: 100px;"></i>
+                    </div>
+                    <div class="item">
+                        <i class="devicon-sqlite-plain-wordmark" style="color: #ffffff; font-size: 100px;"></i>
+                    </div>
+                    <div class="item">
+                        <i class="devicon-mysql-plain-wordmark" style="color: #ffffff; font-size: 100px;"></i>
+                    </div>
+                    <div class="item">
+                        <i class="devicon-microsoftsqlserver-plain-wordmark"
+                            style="color: #ffffff; font-size: 100px;"></i>
+                    </div>
+                    <div class="item">
+                        <i class="devicon-sqlite-plain-wordmark" style="color: #ffffff; font-size: 100px;"></i>
+                    </div>
+                </div>
+            </section>
+            <div style="background-color: #fffdf6;" class="txt-rotate-container">
+                <span style="color: #000;" class="txt-rotate color" data-period="1200"
+                    data-rotate='["Redes de computadora.|"]'></span>
+            </div>
+            <section style="background-color: #fffdf6;" class="clients p-40" id="clients">
+                <div class="client-slider">
+                    <div class="item">
+                        <img src="images/cisco2.png" style="height: 80px; width: 80px;">
+                    </div>
+                    <div class="item">
+                        <img src="images/cisco3.png" style="height: 80px; width: 80px;">
+                    </div>
+                    <div class="item">
+                        <img src="images/cableado.png" style="height: 40px; width: 50px; text-align: center;">
+                        <p style="text-align: center; font-family: poppins; color: white; font-size: 13px;margin-top: 20px;">&nbsp;&nbsp;Cableado</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/cisco2.png" style="height: 80px; width: 80px;">
+                    </div>
+                    <div class="item">
+                        <img src="images/cisco3.png" style="height: 80px; width: 80px;">
+                    </div>
+                    <div class="item">
+                        <img src="images/cableado.png" style="height: 40px; width: 50px; text-align: center;">
+                        <p style="text-align: center; font-family: poppins; color: white; font-size: 13px;margin-top: 20px;">&nbsp;&nbsp;Cableado</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/cisco2.png" style="height: 80px; width: 80px;">
+                    </div>
+                    <div class="item">
+                        <img src="images/cisco3.png" style="height: 80px; width: 80px;">
+                    </div>
+                    <div class="item">
+                        <img src="images/cableado.png" style="height: 40px; width: 50px; text-align: center;">
+                        <p style="text-align: center; font-family: poppins; color: white; font-size: 13px;margin-top: 20px;">&nbsp;&nbsp;Cableado</p>
+                    </div>
+                </div>
+        </section>
+        <div style="background-color: #fffdf6;" class="txt-rotate-container">
+            <span style="color: #c5b76b;" class="txt-rotate color" data-period="1200"
+                data-rotate='["Mantenimiento al equipo de computo.|"]'></span>
+        </div>
+        <section style="background-color: #fffdf6;" class="clients p-40" id="clients">
+            <div class="client-slider">
+                <div class="item">
+                    <img src="images/correctivo.png" style="height: 45px; width: 45px; text-align: center;">
+                    <p style="text-align: center; font-family: poppins; color: white; font-size: 13px;margin-top: 20px;">&nbsp;Correctivo</p>
+                </div>
+                <div class="item">
+                    <img src="images/estetoscopio.png" style="height: 50px; width: 50px; text-align: center;">
+                    <p style="text-align: center; font-family: poppins; color: white; font-size: 14px;margin-top: 20px;">Preventivo</p>
+                </div>
+                <div class="item">
+                    <img src="images/harware.png" style="height: 55px; width: 55px; text-align: center;">
+                    <p style="text-align: center; font-family: poppins; color: white; font-size: 13px;margin-top: 20px;">&nbsp;Hardware</p>
+                </div>
+                <div class="item">
+                    <img src="images/software.png" style="height: 70px; width: 50px; text-align: center;">
+                    <p style="text-align: center; font-family: poppins; color: white; font-size: 13px;margin-top: 20px;">&nbsp;&nbsp;Software</p>
+                </div>
+                <div class="item">
+                    <img src="images/correctivo.png" style="height: 45px; width: 45px; text-align: center;">
+                    <p style="text-align: center; font-family: poppins; color: white; font-size: 13px;margin-top: 20px;">&nbsp;Correctivo</p>
+                </div>
+                <div class="item">
+                    <img src="images/estetoscopio.png" style="height: 50px; width: 50px; text-align: center;">
+                    <p style="text-align: center; font-family: poppins; color: white; font-size: 14px;margin-top: 20px;">Preventivo</p>
+                </div>
+                <div class="item">
+                    <img src="images/harware.png" style="height: 55px; width: 55px; text-align: center;">
+                    <p style="text-align: center; font-family: poppins; color: white; font-size: 13px;margin-top: 20px;">&nbsp;Hardware</p>
+                </div>
+                <div class="item">
+                    <img src="images/software.png" style="height: 70px; width: 50px; text-align: center;">
+                    <p style="text-align: center; font-family: poppins; color: white; font-size: 13px;margin-top: 20px;">&nbsp;&nbsp;Software</p>
+                </div>
+            </div>
+        </section>
+
+            <script>
+                $(document).ready(function () {
+                    // Este script maneja el cambio de pestañas
+                    $('.nav-link').on('click', function (e) {
+                        e.preventDefault();
+                        $('.tab-pane').removeClass('show active');
+                        var target = $(this).attr('href');
+                        $(target).addClass('show active');
+                        $('.nav-link').removeClass('active');
+                        $(this).addClass('active');
+                    });
+            
+                    // Este script establece la pestaña activa al cargar la página
+                    var activeTab = window.location.hash;
+                    if (activeTab) {
+                        $('.nav-link[href="' + activeTab + '"]').tab('show');
+                    }
+                });
+            </script>
+
+                        <div class="services-heading wow" style="margin-top:13px;">
+                            <span class="color">Mi</span> Historial
+                        </div>          
+        <div id="resume" class="sa-section" style="margin-top:-35px;">
+            <div class="section-content section-padding" >
+                <div class="container">
+                    <div class="experience-content">
+                        <div class="tab-menu">
+                            <ul class="nav nav-tabs text-center">
+                                <li class="nav-item">
+                                    <a class="nav-link  active" id="personal-tab" data-toggle="tab" href="#personal" aria-controls="personal"><span><i class="fas fa-graduation-cap fa-2x"></i></span>Perfil Educativo</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a  class="nav-link" id="education-tab" data-toggle="tab" href="#education" aria-controls="education" ><span class="material-icons " style="font-size: 2em !important;">work_history</span>Perfil Profesional</a>
+                                </li>
+                            </ul>                                
+                        </div>
+
+                        
+                        <div class="experience-tab-content">
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="personal">
+                                    <div class="experience">
+                                        <ul class="global-list">
+                                            <li>
+                                                <div class="icon">
+                                                    <i class="fas fa-graduation-cap"></i>
+                                                </div>
+                                                <div class="experience-info">
+                                                    <h2>Tecnológico Nacional de México campus Aguascalientes</h2>
+                                                    <h3>Ingenieria en Tecnologías de la Información y Comunicaciones <br><br>2018 - 2023 </h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <i class="fas fa-graduation-cap"></i>
+                                                </div>
+                                                <div class="experience-info">
+                                                    <h2>CETis 80 Gral. Ignacio López Rayón </h2>
+                                                    <h3>Soporte y Mantenimiento al equipo de computo<br><br>2015 - 2018 </h3>
+                                                </div>
+                                            </li>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="education">
+                                    <div class="experience">
+                                        <ul class="global-list">
+                                            <li>
+                                                <div class="icon">
+                                                    <i style="line-height: inherit; color: #ffffff;" class="material-icons">
+                                                        maps_home_work
+                                                    </i>
+                                                </div>
+                                                <div class="experience-info">
+                                                    <h2>FREELANCE</h2>
+                                                    <h3>- Desarrollo de sistemas de gestión personalizados para diversas industrias, incluyendo educación, hotelería, gimnasios y servicios de suscripción, optimizando procesos y mejorando la eficiencia operativa.<br><br>Agosto 2023 - A la fecha</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <i class="fas fa-building"></i>
+                                                </div>
+                                                <div class="experience-info">
+                                                    <h2>Botanas Sherlyn</h2>
+                                                    <h3>- Desarrollo de sistema de control de entrada y salida de vehículos.<br>- Desarrollo de pagina web.<br>- Desarrollo de chat bot.<br><br>Marzo - Julio 2023 (Residencias Profesionales)</h3>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="icon">
+                                                    <i style="line-height: inherit; color: #ffffff;" class="material-icons">
+                                                        diversity_3
+                                                    </i>
+                                                </div>
+                                                <div class="experience-info">
+                                                    <h2>Workana</h2>
+                                                    <h3>- Desarrollo de sistema POS para establecimiento comercial.<br>- Desarrollo de sistema de control se asistencia de empleados para empresa.<br>- Desarrollo de sistema de gestión hospitalaria.<br><br>2021 - 2022</h3>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                     </div><!-- /.container -->
+                </div><!-- /.section-content -->
+            </div><!-- /.sa-section -->  
+        </section>
+    </div>
+</div>
+
+<!--<section class="skills p-40" id="skills">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-sm-6">
+                <div class="p-64 bg-gradient shadow br-20 text-center mb-24 mb-lg-0">
+                    <img src="assets/media/icons/s-1.png" alt="" class="mb-32">
+                    <h4>Figma</h4>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="p-64 bg-gradient shadow br-20 text-center mb-24 mb-lg-0">
+                    <img src="assets/media/icons/s-2.png" alt="" class="mb-32">
+                    <h4>Adobe XD</h4>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="p-64 bg-gradient shadow br-20 text-center mb-24 mb-lg-0">
+                    <img src="assets/media/icons/s-3.png" alt="" class="mb-32">
+                    <h4>Sketch</h4>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="p-64 bg-gradient shadow br-20 text-center mb-24 mb-lg-0">
+                    <img src="assets/media/icons/s-4.png" alt="" class="mb-32">
+                    <h4>Photoshop</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+<div id="blog">
+    <div class="about-header">
+        Mis <span class="color">Servicios</span>
+        <span class="header-caption">Tu visión, mi código: <span class="color">Haciendo realidad tus proyectos.</span></span>
+    </div>
+        <div class="services-content">
+            <div class="service-one service wow">
+                <div class="service-img">
+                    <img src="images/multip.png" alt="service-one">
+                </div>
+                <div class="service-description">
+                    <h2>Desarrollo multiplataforma</h2>
+                    <p>Desde la etapa de desarrollo hasta la etapa implementación, se le da prioridad a la la innovación, usabilidad y rendimiento, asegurando que cada proyecto destaque en todas las plataformas.</p>
+                </div>
+            </div>
+            <div class="service-two service wow">
+                <div class="service-img">
+                    <img src="images/respon.png" alt="service-two">
+                </div>
+                <div class="service-description">
+                    <h2>Diseño Adaptable</h2>
+                    <p>El sistema se mostrará de manera óptima en cualquier dispositivo. Garantizando una flexibilidad multiplataforma, optimización de rendimiento y una experiencia de usuario atractiva y consistente.</p>
+                </div>
+            </div>
+            <div class="service-three service wow">
+                <div class="service-img">
+                    <img src="images/creat.png" alt="service-three">
+                </div>
+                <div class="service-description">
+                    <h2>Diseño Creativo</h2>
+                    <p>Enfoque creativo que eleva la presencia digital de los proyectos, integrando la innovación visual y la funcionalidad para lograr experiencias excepcionales, innovadoras y tecnológicas.</p>
+                </div>
+            </div>
+            <div class="service-three service wow">
+                <div class="service-img">
+                    <img src="images/mante.png" alt="service-three">
+                </div>
+                <div class="service-description">
+                    <h2>Mantenimiento</h2>
+                    <p>Desde la resolución de problemas hasta la implementación de mejoras, este enfoque en el mantenimiento proporciona una experiencia digital sin interrupciones y optimizada a largo plazo.</p>
+                </div>
+            </div>
+            <div class="service-three service wow">
+                <div class="service-img">
+                    <img src="images/seo.png" alt="service-three">
+                </div>
+                <div class="service-description">
+                    <h2>SEO</h2>
+                    <p>Implementación de estrategias especializadas para mejorar la posición de los proyectos en los motores de búsqueda. Este enfoque destaca la presencia digital y aumenta la atracción de audiencia.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--services content end-->
+
+    <!--portfolio-->
+    <div id="portfolio">
+        <div class="portfolio-header">
+            Mi <span class="color">Portafolio</span>
+            <span class="header-caption">Explora mis proyectos<span class="color"> de desarrollo.</span></span>
+        </div>
+            <div class="container">
+               <div class="row">
+                <div id="portfolio-content">
+                    <div class="portfolio portfolio-first">
+         
+                  <div class="col-md-12 col-sm-12">
+                     
+                        <!-- iso section -->
+                        <div class="iso-section wow fadeInUp" data-wow-delay="2.6s">
+         
+                           <ul class="filter-wrapper clearfix">
+                                    <li><a href="#" data-filter="*" class="selected opc-main-bg">Todos</a></li>
+                                    <li><a href="#" class="opc-main-bg" data-filter=".web">Web</a></li>
+                                    <li><a href="#" class="opc-main-bg" data-filter=".escritorio">Escritorio</a></li>
+                                    <li><a href="#" class="opc-main-bg" data-filter=".movil">Móvil</a></li>
+                                 </ul>
+         
+                                 <!-- iso box section -->
+                                 <div class="iso-box-section wow fadeInUp" data-wow-delay="1s">
+                                    <div class="iso-box-wrapper col4-iso-box">
+
+                                    <div class="iso-box web branding col-md-4 col-sm-6">
+                                          <div class="portfolio-thumb">
+                                             <img src="images/40.png" class="img-responsive" alt="Portfolio">
+                                                <div class="portfolio-overlay">
+                                                   <div class="portfolio-item">
+                                                    <a href="https://api.whatsapp.com/send?phone=+524491810738&text=Hola%2C%20podr%C3%ADa%20brindarme%20informaci%C3%B3n%20acerca%20de%20la%20p%C3%A1gina%20web%20empresarial%3F" target="_blank"><i class="fa fa-link"></i></a>
+                                                         <h2>Más Información</h2>
+                                                      </div>
+                                                </div>
+                                                <i class="devicon-php-plain"></i><i class="devicon-html5-plain"></i></i><i class="devicon-javascript-plain"></i>
+                                          </div>
+                                       </div>
+                                       
+                                      <div class="iso-box web branding col-md-4 col-sm-6">
+                                          <div class="portfolio-thumb">
+                                             <img src="images/43.png" class="img-responsive" alt="Portfolio">
+                                                <div class="portfolio-overlay">
+                                                   <div class="portfolio-item">
+                                                    <a href="https://api.whatsapp.com/send?phone=+524491810738&text=Hola%2C%20podr%C3%ADa%20brindarme%20informaci%C3%B3n%20acerca%20de%20la%20p%C3%A1gina%20web%20empresarial%3F" target="_blank"><i class="fa fa-link"></i></a>
+                                                         <h2>Más Información</h2>
+                                                      </div>
+                                                </div>
+                                                <i class="devicon-mysql-plain"></i><i class="devicon-php-plain"></i><i class="devicon-bootstrap-plain"></i>
+                                          </div>
+                                       </div>
+
+                                                                             <div class="iso-box web branding col-md-4 col-sm-6">
+                                          <div class="portfolio-thumb">
+                                             <img src="images/46.png" class="img-responsive" alt="Portfolio">
+                                                <div class="portfolio-overlay">
+                                                   <div class="portfolio-item">
+                                                    <a href="https://api.whatsapp.com/send?phone=+524491810738&text=Hola%2C%20podr%C3%ADa%20brindarme%20informaci%C3%B3n%20acerca%20de%20la%20p%C3%A1gina%20web%20empresarial%3F" target="_blank"><i class="fa fa-link"></i></a>
+                                                         <h2>Más Información</h2>
+                                                      </div>
+                                                </div>
+                                                <i class="devicon-mysql-plain"></i><i class="devicon-php-plain"></i><i class="devicon-bootstrap-plain"></i>
+                                          </div>
+                                       </div>
+         
+                                        <div class="iso-box web branding col-md-4 col-sm-6">
+                                            <div class="portfolio-thumb">
+                                               <img src="images/10.png" class="img-responsive" alt="Portfolio">
+                                                  <div class="portfolio-overlay">
+                                                     <div class="portfolio-item">
+                                                        <a href="https://api.whatsapp.com/send?phone=+524491810738&text=Hola%2C%20podr%C3%ADa%20brindarme%20informaci%C3%B3n%20acerca%20de%20la%20tienda%20en%20l%C3%ADnea%20de%20tenis%3F" target="_blank"><i class="fa fa-link"></i></a>
+                                                           <h2>Más Información</h2>
+                                                        </div>
+                                                  </div>
+                                                  <i class="devicon-laravel-plain"></i><i class="devicon-php-plain"></i><i class="devicon-composer-line"></i>
+                                            </div>
+                                         </div>
+
+
+                                         <div class="iso-box web branding col-md-4 col-sm-6">
+                                            <div class="portfolio-thumb">
+                                               <img src="images/25.png" class="img-responsive" alt="Portfolio">
+                                                  <div class="portfolio-overlay">
+                                                     <div class="portfolio-item">
+                                                        <a href="https://api.whatsapp.com/send?phone=+524491810738&text=Hola%2C%20podr%C3%ADa%20brindarme%20informaci%C3%B3n%20acerca%20del%20sistema%20para%20farmacias%3F" target="_blank"><i class="fa fa-link"></i></a>
+                                                           <h2>Más Información</h2>
+                                                        </div>
+                                                  </div>
+                                                  <i class="devicon-mysql-plain"></i><i class="devicon-php-plain"></i><i class="devicon-bootstrap-plain"></i>
+                                            </div>
+                                         </div>
+
+                                       <div class="iso-box web branding col-md-4 col-sm-6">
+                                          <div class="portfolio-thumb">
+                                             <img src="images/13.png" class="img-responsive" alt="Portfolio">
+                                                <div class="portfolio-overlay">
+                                                   <div class="portfolio-item">
+                                                    <a href="https://api.whatsapp.com/send?phone=+524491810738&text=Hola%2C%20podr%C3%ADa%20brindarme%20informaci%C3%B3n%20acerca%20de%20la%20p%C3%A1gina%20web%20empresarial%3F" target="_blank"><i class="fa fa-link"></i></a>
+                                                         <h2>Más Información</h2>
+                                                      </div>
+                                                </div>
+                                                <i class="devicon-php-plain"></i><i class="devicon-html5-plain"></i></i><i class="devicon-javascript-plain"></i>
+                                          </div>
+                                       </div>
+         
+                                       <div class="iso-box escritorio template col-md-4 col-sm-6">
+                                          <div class="portfolio-thumb">
+                                             <img src="images/16.png" class="img-responsive" alt="Portfolio">
+                                                <div class="portfolio-overlay">
+                                                   <div class="portfolio-item">
+                                                    <a href="https://api.whatsapp.com/send?phone=+524491810738&text=Hola%2C%20podr%C3%ADa%20brindarme%20informaci%C3%B3n%20acerca%20del%20sistema%20de%20control%20de%20asistencia%20de%20veh%C3%ADculos%3F" target="_blank"><i class="fa fa-link"></i></a>
+                                                         <h2>Más Información</h2>
+                                                      </div>
+                                                </div>
+                                                <i class="devicon-csharp-plain"></i><i class="devicon-dotnetcore-plain"></i><i class="devicon-microsoftsqlserver-plain"></i>
+                                          </div>
+                                       </div>
+         
+                                        <div class="iso-box movil col-md-4 col-sm-6">
+                                            <div class="portfolio-thumb">
+                                               <img src="images/37.png" class="img-responsive" alt="Portfolio">
+                                                  <div class="portfolio-overlay">
+                                                     <div class="portfolio-item">
+                                                           <a href="https://api.whatsapp.com/send?phone=+524491810738"><i class="fa fa-link"></i></a>
+                                                           <h2>Más Información</h2>
+                                                        </div>
+                                                  </div>
+                                                  <i class="devicon-react-original"></i><i class="devicon-php-plain"></i><i class="devicon-javascript-plain"></i>
+                                            </div>
+                                         </div>
+
+                                         <div class="iso-box web branding col-md-4 col-sm-6">
+                                            <div class="portfolio-thumb">
+                                               <img src="images/1.png" class="img-responsive" alt="Portfolio">
+                                                  <div class="portfolio-overlay">
+                                                     <div class="portfolio-item">
+                                                        <a href="https://api.whatsapp.com/send?phone=+524491810738&text=Hola%2C%20podr%C3%ADa%20brindarme%20m%C3%A1s%20informaci%C3%B3n%20acerca%20del%20punto%20de%20venta%3F" target="_blank">
+                                                            <i class="fa fa-link"></i></a>
+                                                           <h2>Más Información</h2>
+                                                        </div>
+                                                  </div>
+                                                  <i class="devicon-mysql-plain"></i><i class="devicon-php-plain"></i><i class="devicon-axios-plain"></i>
+                                            </div>
+                                         </div>
+
+                                         
+                                         <div class="iso-box web branding col-md-4 col-sm-6">
+                                            <div class="portfolio-thumb">
+                                               <img src="images/28.png" class="img-responsive" alt="Portfolio">
+                                                  <div class="portfolio-overlay">
+                                                     <div class="portfolio-item">
+                                                        <a href="https://api.whatsapp.com/send?phone=+524491810738&text=Hola%2C%20podr%C3%ADa%20brindarme%20m%C3%A1s%20informaci%C3%B3n%20acerca%20del%20sistema%20b%C3%A1sico%20de%20restaurante%3F" target="_blank">
+                                                            <i class="fa fa-link"></i></a>
+                                                           <h2>Más Información</h2>
+                                                        </div>
+                                                  </div>
+                                                  <i class="devicon-mysql-plain"></i><i class="devicon-php-plain"></i><i class="devicon-bootstrap-plain"></i>
+                                            </div>
+                                         </div>
+
+
+
+                                         <div class="iso-box web branding col-md-4 col-sm-6">
+                                            <div class="portfolio-thumb">
+                                               <img src="images/7.png" class="img-responsive" alt="Portfolio">
+                                                  <div class="portfolio-overlay">
+                                                     <div class="portfolio-item">
+                                                        <a href="https://api.whatsapp.com/send?phone=+524491810738&text=Hola%2C%20podr%C3%ADa%20brindarme%20m%C3%A1s%20informaci%C3%B3n%20acerca%20del%20sistema%20para%20gimnasio%3F" target="_blank">
+                                                            <i class="fa fa-link"></i></a>
+                                                           <h2>Más Información</h2>
+                                                        </div>
+                                                  </div>
+                                                  <i class="devicon-mysql-plain"></i><i class="devicon-php-plain"></i><i class="devicon-vuetify-plain"></i>
+                                            </div>
+                                         </div>
+
+
+                                         <div class="iso-box web branding col-md-4 col-sm-6">
+                                            <div class="portfolio-thumb">
+                                               <img src="images/4.png" class="img-responsive" alt="Portfolio">
+                                                  <div class="portfolio-overlay">
+                                                     <div class="portfolio-item">
+                                                        <a href="https://api.whatsapp.com/send?phone=+524491810738&text=Hola%2C%20podr%C3%ADa%20brindarme%20m%C3%A1s%20informaci%C3%B3n%20acerca%20del%20sistema%20de%20gesti%C3%B3n%20integral%20comercial%3F" target="_blank">
+                                                            <i class="fa fa-link"></i></a>
+                                                           <h2>Más Información</h2>
+                                                        </div>
+                                                  </div>
+                                                  <i class="devicon-mysql-plain"></i><i class="devicon-php-plain"></i><i class="devicon-vuejs-plain"></i>
+                                            </div>
+                                         </div>
+
+
+                                         <div class="iso-box web branding col-md-4 col-sm-6">
+                                            <div class="portfolio-thumb">
+                                               <img src="images/31.png" class="img-responsive" alt="Portfolio">
+                                                  <div class="portfolio-overlay">
+                                                     <div class="portfolio-item">
+                                                        <a href="https://api.whatsapp.com/send?phone=+524491810738&text=Hola%2C%20podr%C3%ADa%20brindarme%20m%C3%A1s%20informaci%C3%B3n%20acerca%20del%20sistema%20de%20gesti%C3%B3n%20y%20ventas%20de%20restaurante%3F" target="_blank">
+                                                            <i class="fa fa-link"></i></a>
+                                                           <h2>Más Información</h2>
+                                                        </div>
+                                                  </div>
+                                                  <i class="devicon-mysql-plain"></i><i class="devicon-php-plain"></i><i class="devicon-vuejs-plain"></i>
+                                            </div>
+                                         </div>
+
+                                         <div class="iso-box web branding col-md-4 col-sm-6">
+                                            <div class="portfolio-thumb">
+                                               <img src="images/34.png" class="img-responsive" alt="Portfolio">
+                                                  <div class="portfolio-overlay">
+                                                     <div class="portfolio-item">
+                                                        <a href="https://api.whatsapp.com/send?phone=+524491810738&text=Hola%2C%20podr%C3%ADa%20brindarme%20m%C3%A1s%20informaci%C3%B3n%20acerca%20del%20sistema%20de%20gesti%C3%B3n%20para%20sal%C3%B3n%20de%20belleza%3F" target="_blank">
+                                                            <i class="fa fa-link"></i></a>
+                                                           <h2>Más Información</h2>
+                                                        </div>
+                                                  </div>
+                                                  <i class="devicon-mysql-plain"></i><i class="devicon-php-plain"></i><i class="devicon-bootstrap-plain"></i>
+                                            </div>
+                                         </div>
+
+
+                                     </div>
+                              </div>
+                        </div>
+                  </div>
+               </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <div id="nahir-link" style="background-color: white;">
+         <div class="contact-header">Contác<span class="color">tame</span>
+            <span class="header-caption">Un click<span class="color"> de distancia.</span></span>
+            <div class="my-container">
+                <!-- Primera columna con el mapa -->
+                <div class="map-column">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118488.03608415736!2d-102.29125499999999!3d21.8671333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429ec143ae4d9fb%3A0x4016978679c5220!2sAguascalientes%2C%20Ags.!5e0!3m2!1ses-419!2smx!4v1700971852804!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%" height="400" frameborder="0"></iframe>
+                </div>
+        
+                <!-- Segunda columna con iconos y enlaces -->
+                <div class="social-column">
+                    <div class="custom-container">
+                        <div class="custom-container">
+                            <div class="custom-column">
+                                <a href="mailto:itchel@itcheldeluna.space" target="_blank">
+                                    <i class="custom-icon fas fa-envelope"></i>
+                                </a>
+                            </div>
+                            <div class="custom-column">
+                                <a href="https://www.facebook.com/profile.php?id=61587835030699&mibextid=wwXIfr&mibextid=wwXIfr"  target="_blank">
+                                    <i class="custom-icon fab fa-facebook"></i>
+                                </a>
+                            </div>
+                            <div class="custom-column">
+                                <a href="https://github.com/ItchelDeLuna">
+                                    <i class="custom-icon fab fa-github"></i>
+                                </a>
+                            </div>
+                            <div class="custom-column">
+                                <a href="https://wa.me/+524491810738" target="_blank" rel="noopener noreferrer">
+                                    <i class="custom-icon fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="footer">
+            <div class="footer-text">
+                <i class="fas fa-copyright"></i> 2023. Derechos reservados a Itchel De Luna
+            </div>
+        </div>
+
+    <!--all the divisions-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/vendor/jquery-3.6.3.min.js"></script>
+    <script src="js/vendor/slick.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/isotope.js"></script>
+    <script src="js/imagesloaded.min.js"></script>
+    <script src="js/custom.js"></script>
+
+
+</body>
+
+</html>

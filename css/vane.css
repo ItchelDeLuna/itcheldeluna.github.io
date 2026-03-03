@@ -1,0 +1,225 @@
+.my-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-left:10%;
+  margin-right: 10%;
+  margin-top: 30px;
+}
+/* Estilos para la primera columna con el mapa */
+.map-column {
+  flex: 2; /* Mayor peso para la columna del mapa */
+  margin-bottom: 20px;
+  width: 70%; /* Ajustar el ancho en dispositivos móviles según tus preferencias */
+  margin-right:20px;
+}
+
+/* Estilos para la segunda columna con los iconos y enlaces */
+.social-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 10%; /* Ajustar el ancho en dispositivos móviles según tus preferencias */
+}
+
+/* Estilos para los iconos y texto en la segunda columna */
+.custom-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.custom-column {
+  margin: 10px;
+  text-align: center;
+}
+
+/* Puedes personalizar estos estilos según tus necesidades */
+.custom-icon {
+  font-size: 40px;
+  margin-top: -4px;
+  display: inline-block;
+  animation: scale 2s infinite alternate;
+  color: #ffffff; /* Color blanco para el icono */
+  background: linear-gradient(45deg, #faefae, #b3aa7a);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  padding: 15px;
+  overflow: hidden;
+  transition: background 0.3s, transform 0.3s; /* Agregado para suavizar la transición */
+}
+
+.custom-icon:hover {
+  background: linear-gradient(45deg, #faefae, #b19f3f); /* Cambiar el fondo al pasar el ratón sobre el icono */
+  transform: scale(1.1); /* Escala un 10% más grande al pasar el ratón sobre el icono */
+}
+
+
+@keyframes scale {
+  0%, 100% {
+      transform: scale(1); /* Escala normal al principio y al final de la animación */
+  }
+  50% {
+      transform: scale(1.1); /* Escala un 10% más grande en la mitad de la animación */
+  }
+}
+
+
+/* Media queries para hacer el diseño responsive */
+@media screen and (max-width: 768px) {
+  .map-column {
+  flex: 3; /* Mayor peso para la columna del mapa */
+  margin-bottom: 20px;
+  width: 70%; /* Ajustar el ancho en dispositivos móviles según tus preferencias */
+}
+
+/* Estilos para la segunda columna con los iconos y enlaces */
+.social-column {
+  flex: 1; /* Menor peso para la columna de redes sociales */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%; /* Ajustar el ancho en dispositivos móviles según tus preferencias */
+}
+.my-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+.custom-icon {
+  color: #ffffff;
+  font-size: 20px;
+  margin-top: 15px;
+  display: inline-block;
+  animation: scale 2s infinite alternate;
+  background: linear-gradient(45deg, #faefae, #b3aa7a);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  padding: 15px;
+  overflow: hidden;
+
+}
+  }
+
+  @media (max-width: 576px)  {
+    .map-column {
+      flex: 3; /* Mayor peso para la columna del mapa */
+      margin-bottom: 20px;
+      width: 70%; /* Ajustar el ancho en dispositivos móviles según tus preferencias */
+    }
+    
+    /* Estilos para la segunda columna con los iconos y enlaces */
+    .social-column {
+      flex: 1; /* Menor peso para la columna de redes sociales */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 30%; /* Ajustar el ancho en dispositivos móviles según tus preferencias */
+    }
+    .my-container  {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 15px;
+      margin-left: 3%;
+      margin-right: 3%;
+    }
+    .custom-icon {
+      color: #ffffff;
+      font-size: 20px;
+      margin-top: 20px;
+      display: inline-block;
+      animation: scale 2s infinite alternate;
+      background: linear-gradient(45deg, #faefae, #b3aa7a);
+      box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.02), 0px 25px 30px rgba(0, 0, 0, 0.03);
+      border-radius: 50%;
+      padding: 15px;
+      overflow: hidden;
+    
+    }
+
+
+  }
+
+  /* Media queries para hacer el diseño responsive */
+@media screen and (max-width: 700px) {
+  .map-column {
+  flex: 3; /* Mayor peso para la columna del mapa */
+  margin-bottom: 20px;
+  width: 70%; /* Ajustar el ancho en dispositivos móviles según tus preferencias */
+}
+
+/* Estilos para la segunda columna con los iconos y enlaces */
+.social-column {
+  flex: 1; /* Menor peso para la columna de redes sociales */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%; /* Ajustar el ancho en dispositivos móviles según tus preferencias */
+}
+.my-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 30px;
+}
+.custom-icon {
+  color: #ffffff;
+  font-size: 20px;
+  margin-top: 15px;
+  display: inline-block;
+  animation: scale 2s infinite alternate;
+  background: linear-gradient(45deg, #faefae, #b3aa7a);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  padding: 15px;
+  overflow: hidden;
+
+}
+  }
+
+  @media (max-width: 1025px) and (min-width: 551px){
+
+    .map-column {
+      flex: 3; /* Mayor peso para la columna del mapa */
+      margin-bottom: 20px;
+      width: 70%; /* Ajustar el ancho en dispositivos móviles según tus preferencias */
+    }
+    
+    /* Estilos para la segunda columna con los iconos y enlaces */
+    .social-column {
+      flex: 1; /* Menor peso para la columna de redes sociales */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 30%; /* Ajustar el ancho en dispositivos móviles según tus preferencias */
+    }
+    .my-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 30px;
+      margin-left: 3%;
+      margin-right: 3%;
+    }
+    .custom-icon {
+      color: #ffffff;
+      font-size: 20px;
+      margin-top: 15px;
+      display: inline-block;
+      animation: scale 2s infinite alternate;
+      background: linear-gradient(45deg, #faefae, #b3aa7a);
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.15);
+      border-radius: 50%;
+      padding: 15px;
+      overflow: hidden;
+    
+    }
+  }

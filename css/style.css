@@ -1,0 +1,467 @@
+
+
+/* Portfolio section styles
+/* ========================================== */
+#portfolio {
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+
+#portfolio img {
+  width: 100%;
+}
+
+#portfolio .portfolio-thumb {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  background: linear-gradient(45deg, rgba(250, 239, 174, 0.7), rgba(179, 170, 122, 0.7));
+} 
+
+#portfolio .portfolio-thumb .portfolio-overlay {
+  background:linear-gradient(45deg, #faefae, #b3aa7a);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+#portfolio .portfolio-thumb:hover .portfolio-overlay {
+  opacity: 0.95;
+}
+
+#portfolio .portfolio-thumb .portfolio-overlay .portfolio-item {
+    text-align: center;
+    padding: 30% 20px 20px;
+}
+
+#portfolio .portfolio-thumb .portfolio-overlay .fa {
+    background: #f9f9f9;
+    border-radius: 100px;
+    color: #141414;
+    font-size: 1.3rem;
+    display: inline-block;
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 4px;
+}
+#portfolio .row{
+  margin-left: 20px;
+    margin-right: auto;
+}
+.portfolio-item h2 {
+  color: white;
+  font-weight: 600;
+}
+.portfolio-item h3 {
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+}
+
+
+/*filter css*/
+.filter-wrapper {
+    width: 100%;
+    margin-bottom: 32px;
+    overflow: hidden;
+    margin-top: -45px;
+}
+
+.filter-wrapper li {
+    display: inline-block;
+    margin: 4px;
+}
+
+.filter-wrapper li a {
+    color: #c5b76b;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 8px 17px;
+    margin-right: 2px;
+    margin-left: 2px;
+    text-transform: uppercase;
+    display: block;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+    font-family: poppins;
+}
+.filter-wrapper li a:active {
+  background:linear-gradient(45deg, #faefae, #b3aa7a);
+}
+.filter-wrapper li a.selected {
+  background: linear-gradient(45deg, #faefae, #b3aa7a);
+  color: #ffffff;
+  border-radius: 16px;
+  animation: jumpAnimation 0.4s infinite alternate ease-in-out;
+}
+
+@keyframes jumpAnimation {
+  0% {
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  100% {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+
+
+/*isotope box css*/
+.iso-box-section {
+    width: 100%;
+    
+}
+
+.iso-box-wrapper {
+    width: 100%;
+    padding: 0;
+    clear: both;
+    position: relative;
+}
+.iso-box {
+    position: relative;
+    min-height: 50px;
+    float: left;
+    overflow: hidden;
+    margin-bottom: 25px;
+    margin-right: 20px; /* Añadir margen a la derecha */
+    width: calc(33.33% - 20px); /* Ajustar el ancho para tres cajas en una fila */
+    border-radius: 16px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.15);
+  } 
+
+
+  .iso-box .ver-mas-btn {
+    display: block;
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out;
+ }
+ 
+ .iso-box .ver-mas-btn:hover {
+    background-color: #2980b9;
+ }
+ 
+
+
+.iso-box > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+} 
+.fluid-img {
+    width: 100%;
+    display: block;
+}
+
+#portfolio .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+}
+/* Responsive Mobile styles
+/* ========================================== */
+@media (max-width: 980px) {
+
+  .intro-inner {top: 30%;}
+
+  #contact .col-md-4 {
+    padding: 62px 20px 42px 32px;
+  }
+
+  #contact .col-md-4 p {
+    font-size: 12px;
+  }
+
+  #contact #map-canvas {
+    margin-bottom: 60px;
+  }
+  .iso-box {
+    width: calc(50% - 20px); /* Ajustar el ancho para dos cajas en una fila en pantallas más pequeñas */
+}
+.filter-wrapper li a {
+  
+  font-size: 18px;
+  transition: all 0.4s ease-in-out;
+  font-family: poppins;
+}
+.portfolio-item h2 {
+  font-weight: 600;
+  font-size: 18px;
+}
+.portfolio-item h3 {
+  font-weight: 600;
+  font-size: 14px;
+}
+}
+
+
+@media (max-width: 768px) {
+
+  .brand {
+    padding-left: 24px;
+  }
+
+  .header-one, .header-two,
+  .header-three, .header-four,
+  .header-five {
+    min-height: 380px;
+	padding-top: 80px !important;
+  }
+
+  #about .col-md-4,
+  #single-project .col-md-3 {
+    padding-bottom: 32px;
+  }
+  .iso-box {
+    width: calc(50% - 20px); /* Ajustar el ancho para dos cajas en una fila en pantallas más pequeñas */
+}
+.filter-wrapper li a {
+  
+  font-size: 14px;
+  transition: all 0.4s ease-in-out;
+  font-family: poppins;
+}
+.portfolio-item h2 {
+  font-size: 16px; /* Tamaño de fuente para pantallas más pequeñas */
+}
+.portfolio-item h3 {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+
+
+}
+
+
+
+@media (max-width: 700px) {
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  .filter-wrapper {
+    padding: 0px;
+    margin-top: -40px;
+  }
+
+  #contact {
+    padding-bottom: 4rem;
+  }
+
+  #contact .col-md-4 {
+    padding: 32px 20px 22px 62px;
+  }
+  .contact-submit {
+	width: 70%;
+  }
+  .iso-box {
+    width: calc(50% - 20px); /* Ajustar el ancho para dos cajas en una fila en pantallas más pequeñas */
+}
+.filter-wrapper li a {
+  
+  font-size: 14px;
+  transition: all 0.4s ease-in-out;
+  font-family: poppins;
+}
+.portfolio-item h2 {
+  font-size: 14px; /* Tamaño de fuente para pantallas más pequeñas */
+}
+.portfolio-item h3 {
+  font-weight: 600;
+  font-size: 0px;
+}
+}
+
+@media (max-width: 576) {
+.portfolio-item h2 {
+  font-size: 16px; /* Tamaño de fuente más pequeño para pantallas aún más pequeñas */
+}
+.portfolio-item h3 {
+  font-weight: 600;
+  font-size: 0px;
+}
+  .iso-box {
+    width: calc(50% - 20px); /* Ajustar el ancho para dos cajas en una fila en pantallas más pequeñas */
+}
+}
+
+@media (max-width: 450px) {
+  .intro-inner {top: 50%;}
+  .iso-box {
+    width: calc(50% - 20px); /* Ajustar el ancho para dos cajas en una fila en pantallas más pequeñas */
+}
+.filter-wrapper li a {
+  
+  font-size: 15px;
+  transition: all 0.4s ease-in-out;
+  font-family: poppins;
+}
+.portfolio-item h2 {
+  font-size: 14px; /* Tamaño de fuente más pequeño para pantallas aún más pequeñas */
+}
+.portfolio-item h3 {
+  font-weight: 600;
+  font-size: 0px;
+}
+}
+
+
+
+/* Estilo para dispositivos móviles: Ocultar overlay y mostrar botón */
+@media (max-width: 768px) {
+  .portfolio-thumb .portfolio-overlay {
+    display: none;
+  }
+
+  .portfolio-thumb:hover .portfolio-overlay {
+    display: block;
+  }
+
+  .portfolio-thumb .mobile-link-button {
+    background: linear-gradient(45deg, #faefae, #bcb280);
+    border: none;
+    padding: 7px 15px;
+    color: white;
+    outline: none;
+    font-size: 12px;
+    font-weight: 800;
+    font-family:  'Poppins', sans-serif;
+    margin-bottom: 8px;
+    border-radius: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    position: relative;
+    animation: subtleAnimation 2s infinite alternate; /* Animación constante */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08); /* Ajusta los valores según tus preferencias */
+  }
+  
+  @keyframes subtleAnimation {
+    0%, 100% {
+      transform: translateY(0); /* Inicial y final: sin desplazamiento */
+    }
+    50% {
+      transform: translateY(-1px); /* En el medio: desplazamiento hacia arriba */
+    }
+  }
+}
+
+
+
+/* Estilo para dispositivos más grandes: Ocultar botón */
+@media (min-width: 769px) {
+  .portfolio-thumb .mobile-link-button {
+    display: none;
+  }
+}
+
+
+/* Estilo para los iconos devicon */
+#portfolio .devicon-php-plain,
+.devicon-html5-plain,
+.devicon-css3-plain,
+.devicon-javascript-plain,
+.devicon-microsoftsqlserver-plain,
+#portfolio .devicon-dotnetcore-plain,
+#portfolio .devicon-csharp-plain,
+.devicon-laravel-plain,
+.devicon-composer-line,
+.devicon-mysql-plain,
+.devicon-react-original,
+.devicon-androidstudio-plain,
+.devicon-java-plain,
+.devicon-android-plain,
+.devicon-mysql-plain,
+.devicon-bootstrap-plain,
+.devicon-axios-plain,
+.devicon-vuetify-plain,
+.devicon-vuejs-plain {
+    color: #ffffff; /* Color de los iconos */
+    font-size: 30px; /* Tamaño de los iconos */
+    margin-right: 15px; /* Margen derecho entre iconos (ajustable según tus preferencias) */
+    margin-top: 8px; /* Margen superior para separar los iconos verticalmente */
+    margin-bottom: 3px; /* Margen superior para separar los iconos verticalmente */
+    display: inline-block; /* Hace que los elementos se comporten como bloques en línea */
+    animation: scale 2s infinite alternate; /* Aplica la animación de acercamiento con duración de 2 segundos, alterna entre acercamiento y alejamiento, y se repite infinitamente */
+    background: linear-gradient(45deg, #faefae, #b3aa7a); /* Color del fondo circular */
+    box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.02), 0px 25px 30px rgba(0, 0, 0, 0.03);
+    border-radius: 50%; /* Hace que el fondo sea circular */
+    padding: 10px; /* Añade un espacio adicional alrededor del icono para el fondo circular */
+    overflow: hidden; /* Asegura que el contenido dentro del círculo no sobresalga */
+    margin-right: 8px;
+    margin-left: 10px;
+}
+
+@keyframes scale {
+    0%, 100% {
+        transform: scale(1); /* Escala normal al principio y al final de la animación */
+    }
+    50% {
+        transform: scale(1.1); /* Escala un 10% más grande en la mitad de la animación */
+    }
+}
+
+@media (max-width: 768px) {
+/* Estilo para los iconos devicon */
+#portfolio .devicon-php-plain,
+.devicon-html5-plain,
+.devicon-css3-plain,
+.devicon-javascript-plain,
+.devicon-microsoftsqlserver-plain,
+#portfolio .devicon-dotnetcore-plain,
+#portfolio .devicon-csharp-plain,
+.devicon-laravel-plain,
+.devicon-composer-line,
+.devicon-mysql-plain,
+.devicon-react-original,
+.devicon-androidstudio-plain,
+.devicon-java-plain,
+.devicon-android-plain,
+.devicon-mysql-plain,
+.devicon-bootstrap-plain,
+.devicon-axios-plain,
+.devicon-vuetify-plain,
+.devicon-vuejs-plain {
+  color: #ffffff; /* Color de los iconos */
+  font-size: 24px; /* Tamaño de los iconos */
+  margin-right: 1px; /* Margen derecho entre iconos (ajustable según tus preferencias) */
+  margin-top: 8px; /* Margen superior para separar los iconos verticalmente */
+  margin-bottom: 2px; /* Margen superior para separar los iconos verticalmente */
+  display: inline-block; /* Hace que los elementos se comporten como bloques en línea */
+  animation: scale 2s infinite alternate; /* Aplica la animación de acercamiento con duración de 2 segundos, alterna entre acercamiento y alejamiento, y se repite infinitamente */
+  background: linear-gradient(45deg, #faefae, #b3aa7a); /* Color del fondo circular */
+  box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.02), 0px 25px 30px rgba(0, 0, 0, 0.03);
+  border-radius: 50%; /* Hace que el fondo sea circular */
+  padding: 7px; /* Añade un espacio adicional alrededor del icono para el fondo circular */
+  overflow: hidden; /* Asegura que el contenido dentro del círculo no sobresalga */
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+
+}

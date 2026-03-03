@@ -1,0 +1,61 @@
+.p-40 {
+  padding: 40px 0;
+  padding-top: 60px;
+}
+@media (max-width: 1199px) {
+  .p-40 {
+    padding: 20px 0;
+    padding-top: 48px;
+    
+  }
+}
+
+.clients .client-slider .item {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 12px;
+  background: linear-gradient(45deg, #faefae, #b3aa7a);
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  transform: scale(1);
+  overflow: hidden;
+}
+
+.clients .client-slider .item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.clients .client-slider .item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #faefae, #b19f3f);
+  border-radius: 20px;
+  opacity: 0;
+  transition: opacity 0.7s;
+}
+
+.clients .client-slider .item:hover::before {
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.clients .client-slider .item img {
+  max-width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+
+.clients .client-slider .item:hover img {
+  filter: none;
+  transition: filter 0.3s;
+}
